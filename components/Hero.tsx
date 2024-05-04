@@ -4,6 +4,8 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
+import { ParticlesContainer } from "./Particles";
+
 
 const img_url = "/Images/dp.jpg";
 
@@ -11,13 +13,23 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hi, The Name's Rohit", "A devELOPER"],
+    words: [
+      "Hi, The Name's Rohit",
+      "A devELOPER",
+      "200: Fetched Coffee.",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
+    <div className="relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden mydiv ">
+      {/* <BackgroundCircles /> */}
+
+      <div id="tsparticles">
+        <ParticlesContainer />
+      </div>
+      
+
       <Image
         src={img_url}
         alt={"dp_here"}
@@ -27,6 +39,7 @@ function Hero({}: Props) {
         priority
         unoptimized
       />
+
       <div className="z-20">
         <h2 className=" text-xs lg:text-sm text-slate-700 uppercase  tracking-[10px] lg:tracking-[15px] pb-2">
           Software Developer

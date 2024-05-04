@@ -11,9 +11,11 @@ type Props = {
   title: string;
   link: string;
   body: string;
+  url: string | ""
+  github: string | ""
 };
 
-function LeftProject({ img_url, title, link, body }: Props) {
+function LeftProject({ img_url, title, link, body,url,github }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -36,15 +38,18 @@ function LeftProject({ img_url, title, link, body }: Props) {
         <div className="text-sm xl:text-md font-sans tracking-wider font-semibold text-slate-400">
           <ReactMarkdown>{body}</ReactMarkdown>
           <div className="flex mt-7 justify-evenly items-center">
+            {
+              url!="" &&
             <Button
-              type="demo"
-              title="Demo"
-              path="https://weather-gpt-seven.vercel.app"
+            type="demo"
+            title="Demo"
+            path={url}
             />
+          }
             <Button
               type="github"
               title="Code"
-              path="https://github.com/p-rohitt/"
+              path={github}
             />
           </div>
         </div>

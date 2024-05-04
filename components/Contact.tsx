@@ -20,7 +20,7 @@ function Contact(){
       }}
       className="h-screen flex flex-col relative mt-24 md:flex-row text-center md:text-left max-w-7xl justify-evenly mx-auto items-center px-10"
     >
-      <h3 className="absolute top-4 uppercase tracking-[25px] text-slate-500 text-2xl font-semibold">
+      <h3 className="absolute top-4 uppercase tracking-[25px] text-slate-500 text-2xl md:text-3xl font-bold">
         Contact
       </h3>
 

@@ -34,7 +34,7 @@ const Education: FC = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
-      <h3 className=" mt-10 uppercase tracking-[20px] md:tracking-[25px] text-slate-500 text-xl md:text-2xl font-semibold">
+      <h3 className=" mt-10 uppercase tracking-[20px] md:tracking-[25px] text-slate-500 text-xl md:text-3xl font-bold">
         Education
       </h3>
 
@@ -44,8 +44,8 @@ const Education: FC = () => {
           year="2021-2025"
           major="B.Tech CSE"
           summary={[
-            "Current GPA : 8.2/10 (Upto 4th semester)",
-            "Took courses like DSA, DBMS, OS, Networks.",
+            "Current GPA : 8.29/10 (Upto 5th semester)",
+            "Took courses like DSA, DBMS, OS, Networks, AI, OOPS.",
             "Reading club coordinator for 2 consecutive semesters.",
             "Core Member of the Yuvaan's Media & Publicity Team for the year 2022.",
           ]}
@@ -55,7 +55,7 @@ const Education: FC = () => {
           name="Vikash Group of Institutions"
           year="2018-2021"
           major="Senior Secondary"
-          summary={["A podium finish in the CBSE examinations.", "Secured a silver medal in Science Olympiad by S.O.F", "Cleared JEE advanced with a rank of 11,000.","Active participation in the Technocrats Club."]}
+          summary={["A podium finish in the CBSE examinations.", "Secured a silver medal in Science Olympiad by S.O.F", "Qualified JEE Advanced with a rank of 11,000.","Active participation in the Technocrats Club."]}
           img_url="vikash"
         />
       </div>

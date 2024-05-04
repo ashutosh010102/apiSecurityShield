@@ -35,7 +35,7 @@ const Skills: FC = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
-      <h3 className=" uppercase tracking-[20px] md:tracking-[25px] text-slate-500 text-xl md:text-2xl font-semibold  px-3 mb-7">
+      <h3 className=" uppercase tracking-[20px] md:tracking-[25px] text-slate-500 text-xl md:text-3xl font-bold  px-3 mb-7">
         Skills
       </h3>
 

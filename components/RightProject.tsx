@@ -31,14 +31,14 @@ function RightProject({ img_url, title, body, link }: Props) {
           {" "}
           {title}
         </h3>
-        <p className="text-sm xl:text-md font-sans tracking-wider font-semibold text-slate-400 p-3">
+        <div className="text-sm xl:text-md font-sans tracking-wider font-semibold text-slate-400 p-3">
           <ReactMarkdown>{body}</ReactMarkdown>
-        </p>
+        </div>
         <div className="flex mt-3 justify-evenly items-center">
           <Button
             type="github"
             title="Code"
-            path="https://github.com/p-rohitt/"
+            path="https://github.com/p-rohitt/youtube-ad-recommender"
           />
         </div>
       </div>
